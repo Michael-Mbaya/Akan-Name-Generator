@@ -42,10 +42,6 @@ form,.res{
     width: 100px;
 }
 
-.inp{
-    width: 120px;
-}
-
-.selekta{
-    width: 135px;
+.inp,.selekta{
+    width: 150px;
 }
