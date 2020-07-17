@@ -1,7 +1,27 @@
-.container{
+.container-fluid{
     height: 100vh;
 }
 
-table{
-    border: 2px solid white;
+.intro,table,.calc{
+    overflow: hidden;
+}
+
+p{
+    margin-bottom: 0px;
+    padding: 0px 10px;
+}
+
+.calc{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+
+.left{
+    width: 25%;
+}
+
+.right{
+    width: 75%;
 }
