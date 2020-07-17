@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container-fluid bg-info pt-2 pb-2">
+<div class="container-fluid bg-secondary pt-2 pb-2">
 
   <div class="intro text-center bg-light">
     <h1>Akan Names</h1>
@@ -19,79 +19,92 @@
       Akan names are also given according to the gender of the person.</p>
   </div>   
 
-  <table class="table table-responsive-sm table-bordered table-hover bg-light text-center ml-auto mr-auto my-0">
-    <caption class="bg-dark text-white text-center">
-      <em>Days of the week male and female Akan names.</em>
-    </caption>
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Day Of the Week</th>
-        <th scope="col">Female</th>
-        <th scope="col">Male</th>
+  <div class="calc bg-info">
+    <div class="lefty text-center">
+      <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0">
+        <caption class="bg-dark text-white text-center">
+          <em>Days of the week male and female Akan names.</em>
+        </caption>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Day Of the Week</th>
+            <th scope="col">Female</th>
+            <th scope="col">Male</th>
+              </tr>
+        </thead>
+        <tbody>
+          <!--table row Sunday Names-->
+          <tr>
+            <td>Sunday</td>
+            <td>Akosua</td>
+            <td>Kwasi</td>
           </tr>
-    </thead>
-    <tbody>
-      <!--table row Sunday Names-->
-      <tr>
-        <td>Sunday</td>
-        <td>Akosua</td>
-        <td>Kwasi</td>
-      </tr>
-      <!--table row Monday Names-->
-      <tr>
-        <td>Monday</td>
-        <td>Adwoa</td>
-        <td>Kwadwo</td>
-      </tr>
-      <!--table row Tusday Names-->
-      <tr>
-        <td>Tuesday</td>
-        <td>Abenaa</td>
-        <td>Kwabena</td>
-      </tr>
-      <!--table row Wednesday Names-->
-      <tr>
-        <td>Wednesday</td>
-        <td>Akua</td>
-        <td>Kwaku</td>
-      </tr>
-      <!--table row Thursday Names-->
-      <tr>
-        <td>Thursday</td>
-        <td>Yaa</td>
-        <td>Yaw</td>
-      </tr>
-      <!--table row Friday Names-->
-      <tr>
-        <td>Friday</td>
-        <td>Afua</td>
-        <td>Kofi</td>
-      </tr>
-      <!--table row Saturday Names-->
-      <tr>
-        <td>Saturday</td>
-        <td>Ama</td>
-        <td>Kwame</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="calc bg-light">
-    <div class="left text-center">
-      <p>instructions go here</p>
-      <p>some here</p>
-      <p>others here</p>
-      <p>othhers here</p>
-      <p>and so on</p>
+          <!--table row Monday Names-->
+          <tr>
+            <td>Monday</td>
+            <td>Adwoa</td>
+            <td>Kwadwo</td>
+          </tr>
+          <!--table row Tusday Names-->
+          <tr>
+            <td>Tuesday</td>
+            <td>Abenaa</td>
+            <td>Kwabena</td>
+          </tr>
+          <!--table row Wednesday Names-->
+          <tr>
+            <td>Wednesday</td>
+            <td>Akua</td>
+            <td>Kwaku</td>
+          </tr>
+          <!--table row Thursday Names-->
+          <tr>
+            <td>Thursday</td>
+            <td>Yaa</td>
+            <td>Yaw</td>
+          </tr>
+          <!--table row Friday Names-->
+          <tr>
+            <td>Friday</td>
+            <td>Afua</td>
+            <td>Kofi</td>
+          </tr>
+          <!--table row Saturday Names-->
+          <tr>
+            <td>Saturday</td>
+            <td>Ama</td>
+            <td>Kwame</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <div class="right text-center">
-      <p>Results go here</p>
-    </div>
+    <div class="righty">
+      <form class="m-2" id="form">
+        <label class="space">Date Born: </label>
+          <input class="inp" type="text" id="day" placeholder="Day born"><br>
+          <p id="dateText"></p>
+        <label class="space">Month Born: </label>
+          <input class="inp" type="text" id="month" placeholder="Month born"><br>
+          <p id="monthText"></p>        
+        <label class="space">Year Born: </label>
+          <input class="inp" type="text" id="year" placeholder="Year born"><br>                
+          <p id="yearText"></p>        
+        <label class="space">Gender: </label>
+        <select class="selekta" id="gender">
+          <option value="selectdefault">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
+          <input class=" btn mr-3" type="submit" onclick="akaned()" value="Submit">
+          <input class=" btn" type="submit" value="Clear" onclick="this.form.reset()" >
+      </form>
+    <div class="res">
+      <h1 class=" m-0 text-capitalize text-center" id="result">erty</h1>
+    </div>           
+    </div>     
   </div>
 
 </div>
-
-
+<script src="js/names.js"></script>
 </body>
 </html>

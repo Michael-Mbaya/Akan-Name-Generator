@@ -1,8 +1,14 @@
-.container-fluid{
-    height: 100vh;
+body{
+    height: 100%;
+    overflow: scroll;
 }
 
-.intro,table,.calc{
+.container-fluid{
+    height: 100%;
+    overflow: hidden;
+}
+
+.intro,table,.calc,form{
     overflow: hidden;
 }
 
@@ -11,17 +17,35 @@ p{
     padding: 0px 10px;
 }
 
-.calc{
+.lefty{
+    width: 100%;
+    /* overflow-x: scroll;  put on media query small screen */
+}
+
+.righty{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    align-items: stretch;
+    justify-content: space-around;
 }
 
-.left{
-    width: 25%;
+form,.res{
+    height: 100%;
+    width: 41%;
 }
 
-.right{
-    width: 75%;
+.res{
+    align-self: center;
+}
+
+.space{
+    width: 100px;
+}
+
+.inp{
+    width: 120px;
+}
+
+.selekta{
+    width: 135px;
 }
