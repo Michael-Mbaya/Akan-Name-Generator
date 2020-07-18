@@ -26,16 +26,16 @@ p{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-form,.res{
+form{
     height: 100%;
-    width: 41%;
+    width: 40%;
 }
 
 .res{
     align-self: center;
+    width: 60%;
 }
 
 .space{
@@ -45,3 +45,34 @@ form,.res{
 .inp,.selekta{
     width: 150px;
 }
+
+#subbtn{
+    width: 100px;
+}
+
+#result{
+    font-size: 40px;
+    color: white;
+}
+
+#resultintro{
+    font-size: 25px;
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    .righty{
+        display: flex;
+        flex-direction: column;          
+    }
+    form,.res{
+        width: 100%;
+        align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 300px){
+    .calc{
+        overflow-x: scroll;
+    }
+  }

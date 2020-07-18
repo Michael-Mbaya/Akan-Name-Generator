@@ -18,9 +18,9 @@ function akaned(){
 
     var date = new Date(year +"/" + month + "/"+day);
     var actualBirthDay = date.getDay();
-    alert(actualBirthDay);                          //show index of week/sun=0 to sat=6
+    // alert(actualBirthDay);                          //show index of week/sun=0 to sat=6
     var akanDay = dayOfWeek[actualBirthDay];        //value of index from dayOfWeek
-    alert(akanDay);                          //test show days for various dates //correct on dates
+    // alert(akanDay);                          //test show days for various dates //correct on dates
 
    function testignore(){
     // var cc = parseInt(year.slice(0,2));
@@ -41,20 +41,59 @@ function akaned(){
     // alert(akanDay);                                       //test show days from dayOfWeek array  
    }
 
-   if ((month<1 || month>12) || (month<1 && month>12) || (month="") ) {
-    alert("Please enter a Valid Month Number from 1 - 12");
+  var invalidMonth = ( month<1 || month>12 || ((document.getElementById("month").value)=="") );        
+            //above boolean: month is <1 or >12 or empty
+  var invalidDay = ( day<1 || day>31 || ((document.getElementById("day").value)=="") );                
+            //above boolean: day is <1 or >31 or empty  
+  var invalidYear = (  year<1 || ( year>( new Date().getFullYear() ) ) || ((document.getElementById("year").value)=="") );
+           //above boolean: year is <1 or >current year or empty
+  var invalidGender = ( (gender=="selectdefault") );
+           //above boolean: gender is 'selectdefault' i.e no chosen gender of female or male
+  var invalidAll = ((invalidDay==true)&&(invalidMonth==true)&&(invalidYear==true)&&(invalidGender==true));
+           //above boolean is true if all inputs(day,month,year and gender) are wrong
+  var validFemale = ((invalidDay==false)&&(invalidMonth==false)&&(invalidYear==false)&&(gender==="Female"));
+           //above boolean: day and month and year are all correct and gender='Female'  
+  var validMale = ((invalidDay==false)&&(invalidMonth==false)&&(invalidYear==false)&&(gender==="Male"));
+           //above boolean: day and month and year are all correct and gender='Male' 
+   
+    if ( invalidAll==true ) {
+     document.getElementById('result').textContent = "*Kindly Enter all Details Correctly!";
+     document.getElementById("result").style.color = "red";
+     document.getElementById("resultintro").style.display = "none";
     }
-    
-    if ((day<1 || day>31) || (day<1 && day>31) || (day="") ) {
-    alert("Please enter a Valid Day Number from 1 - 31");
+   else if( invalidDay ) {  
+     document.getElementById('result').textContent = "*Please enter a Valid Day Number from 1 - 31";
+     document.getElementById("result").style.color = "red";      
+     document.getElementById("resultintro").style.display = "none";
+   }
+   else if ( invalidMonth==true ) {
+     document.getElementById('result').textContent = "*Please enter a Valid Month Number from 1 - 12";
+     document.getElementById("result").style.color = "red";
+     document.getElementById("resultintro").style.display = "none";
     }
-    if (( year<1 || year>(new Date().getFullYear()) ) || (year<1 && year>(new Date().getFullYear()))
-    || (year="") ) {
-    alert("Please enter a Valid or Current Year");
+   else if ( invalidYear==true ) {
+     document.getElementById('result').textContent = "*Please enter a Valid Year or Current Year";
+     document.getElementById("result").style.color = "red";
+     document.getElementById("resultintro").style.display = "none";
     }
-    
-    if ((gender=="selectdefault")) {
-    alert("please select a gender in order to get your Akan name");
+   else if ( invalidGender==true ) {
+     document.getElementById('result').textContent = "*please select a gender in order to get your Akan name";
+     document.getElementById("result").style.color = "red";
+     document.getElementById("resultintro").style.display = "none";
+    }
+   else if ( validFemale==true ) {
+     document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +femaleAkanName[actualBirthDay];
+     document.getElementById("result").style.color = "white";     
+     document.getElementById("resultintro").style.display = "none";
+    }
+   else if ( validMale==true) {
+     document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +maleAkanName[actualBirthDay];
+     document.getElementById("result").style.color = "white";    
+     document.getElementById("resultintro").style.display = "none";
+    }
+   else {
+     alert("Wow!!! It Seems You are either an old Being with no known date of birth or from the Future! Cannot Compute your Akan Name");
     }
 
 }
+

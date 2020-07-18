@@ -28,9 +28,9 @@ A web application that takes a user's birthday, calculates the day of the week t
 
 
 # Technologies Used
-## HTML 
-## CSS 
-## Javascript
+#### HTML 
+#### CSS 
+#### Javascript
 
 # Support and contact details
 In case of any questions, feel free to contact me at my email address:

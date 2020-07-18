@@ -20,6 +20,33 @@
   </div>   
 
   <div class="calc bg-info">
+
+    <div class="righty">
+      <form class="m-2" id="form">
+        <label class="space">Day Born: </label>
+          <input class="inp" type="text" id="day" placeholder="Day born (1-31)"><br>
+        
+        <label class="space">Month Born: </label>
+          <input class="inp" type="text" id="month" placeholder="Month born (1-12)"><br>
+        
+        <label class="space">Year Born: </label>
+          <input class="inp" type="text" id="year" placeholder="Year born e.g 1999"><br>                
+        
+        <label class="space">Gender: </label>
+        <select class="selekta" id="gender">
+          <option value="selectdefault">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
+          <input class=" btn mt-2" type="submit" value="Clear and Retry" onclick="this.form.reset();return false;" >
+          <input class=" btn mt-2 ml-2" type="submit" onclick="akaned();//return false;" value="Submit" id="subbtn">
+      </form>
+    <div class="res">
+      <p class=" font-weight-bold" id="resultintro">Fill the form and see your results Here</p>
+      <h1 class=" m-0 text-capitalize text-center" id="result"></h1>
+    </div>           
+    </div>   
+
     <div class="lefty text-center">
       <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0">
         <caption class="bg-dark text-white text-center">
@@ -77,31 +104,8 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="righty">
-      <form class="m-2" id="form">
-        <label class="space">Day Born: </label>
-          <input class="inp" type="text" id="day" placeholder="Day born (1-31)"><br>
-          <p id="dateText"></p>
-        <label class="space">Month Born: </label>
-          <input class="inp" type="text" id="month" placeholder="Month born (1-12)"><br>
-          <p id="monthText"></p>        
-        <label class="space">Year Born: </label>
-          <input class="inp" type="text" id="year" placeholder="Year born e.g 1999"><br>                
-          <p id="yearText"></p>        
-        <label class="space">Gender: </label>
-        <select class="selekta" id="gender">
-          <option value="selectdefault">Select Gender</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select><br>
-          <input class=" btn mr-3" type="submit" onclick="akaned();//return false;" value="Submit">
-          <input class=" btn" type="submit" value="Clear and Retry" onclick="this.form.reset();return false;" >
-      </form>
-    <div class="res">
-      <h1 class=" m-0 text-capitalize text-center" id="result">erty</h1>
-    </div>           
-    </div>     
+    </div> 
+
   </div>
 
 </div>
