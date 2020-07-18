@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background-image: url(/img/waterdrops.jpg);
+    background-image: url('/img/waterdrops.jpg');
     background-size: contain;
 }
 
