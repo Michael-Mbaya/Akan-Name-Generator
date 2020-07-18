@@ -9,17 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container-fluid bg-secondary pt-2 pb-2">
+<div class="container py-2">
+
+  <div class="navy text-right bg-dark p-3">
+    <a class=" text-white p-2" href="#intro">Home</a>
+    <a class=" text-white p-2" href="#akan">Generator</a>
+    <a class=" text-white p-2" href="#names">Names</a>
+    <a class=" text-white p-2" href="#contact">Contacts</a>
+  </div>
 
   <div class="intro text-center bg-light">
-    <h1>Akan Names</h1>
-    <p class=" text-justify">Akan names are derived from Ghanian culture. Frequently in Ghana, 
-      children are given their first name as a 'day name' which corresponds 
-      to the day in the week they were born. Apart from the days of the week, 
-      Akan names are also given according to the gender of the person.</p>
+    <h1 id="intro">Akan Names</h1>
+    <p class=" text-justify">Akan names are derived from Ghanian culture. 
+      Frequently in Ghana, children are given their first name as a 'day name' 
+      which corresponds to the day in the week they were born. Apart from the 
+      days of the week, Akan names are also given according to the gender of 
+      the person. Most people do know when their birthdays are, but some might 
+      not know what day of the week they were born. Use the generator below to 
+      find out what your Akan Name would be.If you know your day of birth, 
+      check this <a href="#names">Table</a></p>
   </div>   
 
-  <div class="calc bg-info">
+  <div class="calc bg-info" id="akan">
 
     <div class="righty">
       <form class="m-2" id="form">
@@ -48,8 +59,8 @@
     </div>   
 
     <div class="lefty text-center">
-      <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0">
-        <caption class="bg-dark text-white text-center">
+      <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0" id="names">
+        <caption class="bg-light text-dark text-center font-weight-bold">
           <em>Days of the week male and female Akan names.</em>
         </caption>
         <thead class="thead-dark">
@@ -106,6 +117,10 @@
       </table>
     </div> 
 
+  </div>
+
+  <div class="footer text-center bg-dark p-3" id="contact">
+    <p class=" text-white">Copyright &copy; Michael-Mbaya</p>
   </div>
 
 </div>
