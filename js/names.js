@@ -18,10 +18,9 @@ function akaned(){
 
     var date = new Date(year +"/" + month + "/"+day);
     var actualBirthDay = date.getDay();
-    alert(actualBirthDay); //show index of week/sun=0 to sat=6
-    var akanDay = dayOfWeek[actualBirthDay]; //value of index from dayOfWeek
-    alert(akanDay); //test show days for various dates //correct on dates
-
+    alert(actualBirthDay);                          //show index of week/sun=0 to sat=6
+    var akanDay = dayOfWeek[actualBirthDay];        //value of index from dayOfWeek
+    alert(akanDay);                          //test show days for various dates //correct on dates
 
    function testignore(){
     // var cc = parseInt(year.slice(0,2));
@@ -42,6 +41,20 @@ function akaned(){
     // alert(akanDay);                                       //test show days from dayOfWeek array  
    }
 
-
+   if ((month<1 || month>12) || (month<1 && month>12) || (month="") ) {
+    alert("Please enter a Valid Month Number from 1 - 12");
+    }
+    
+    if ((day<1 || day>31) || (day<1 && day>31) || (day="") ) {
+    alert("Please enter a Valid Day Number from 1 - 31");
+    }
+    if (( year<1 || year>(new Date().getFullYear()) ) || (year<1 && year>(new Date().getFullYear()))
+    || (year="") ) {
+    alert("Please enter a Valid or Current Year");
+    }
+    
+    if ((gender=="selectdefault")) {
+    alert("please select a gender in order to get your Akan name");
+    }
 
 }
