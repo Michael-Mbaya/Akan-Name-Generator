@@ -1,2 +1,56 @@
 # Akan-Name-Generator
+
+#### By **Michael-Mbaya**
+
+## Description
 A web application that takes a user's birthday, calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+
+# Features
+* 1.A form allowing user to input day, month and year of birth.
+
+* 2.Options allowing user to select gender.
+
+* 3.Validations function alerting user if inputs entered are incorrect.
+
+* 4.A submit button, which when pressed after inputing valid data returns to the user the date they were born and their Akan name.
+
+# Setup/Installation Requirements
+
+* To view the app, open the Github Pages link provided below:
+#### https://michael-mbaya.github.io/Akan-Name-Generator/
+
+* You can also:
+* 1.Clone this repository or download a ZIP file of the code.
+
+* 2.The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened.
+
+* 3.Run the index.html file on your local machine to view the application on your preferred web browser.
+
+
+# Technologies Used
+## HTML 
+## CSS 
+## Javascript
+
+# Support and contact details
+In case of any questions, feel free to contact me at my email address:
+* gikundamike@gmail.com
+
+# License
+## GPL-3.0 License
+Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
+
+### Permissions
+* Commercial use
+* Modification
+* Distribution
+* Patent use
+* Private use
+### Limitations
+* Liability
+* Warranty
+### Conditions
+* License and copyright notice
+* State changes
+* Disclose source
+* Same license
