@@ -37,7 +37,7 @@ A web application that takes a user's birthday, calculates the day of the week t
 * Be able to give the user a form for date of birth input.
 * Be able to give the user a form for month of birth input.
 * Be able to give the user a form for year of birth input.
-* Be able to allow the user input their gender ie.either male or female.Other genders do not apply.
+* Be able to allow the user input their gender ie.either male or female. Other genders do not apply.
 * Ensure that the date value entered is a valid date.
 * Find the day of the week from the date input and combine that with the gender to output an Akan name that corresponds to that day of the week.
 * A button that clears the output and allow for the repeat of the process.
