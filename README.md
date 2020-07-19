@@ -45,7 +45,7 @@ A web application that takes a user's birthday, calculates the day of the week t
 
 # Support and contact details
 In case of any questions, feel free to contact me at my email address:
-* gikundamike@gmail.com
+#### gikundamike@gmail.com
 
 # License
 ## GPL-3.0 License
