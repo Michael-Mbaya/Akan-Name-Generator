@@ -55,7 +55,13 @@ function akaned(){
            //above boolean: day and month and year are all correct and gender='Female'  
   var validMale = ((invalidDay==false)&&(invalidMonth==false)&&(invalidYear==false)&&(gender==="Male"));
            //above boolean: day and month and year are all correct and gender='Male' 
-   
+  var febDates = ( ((month===2)&&(day==30)) || ((month===2)&&(day==31)) );
+           //above boolean: check for feb 30 and feb 31 inputs (non-existing dates) 
+  var aprJune =  ( ((month===4)&&(day==31)) || ((month===6)&&(day==31)) );
+           //above boolean: check for apr 31 and June 31 inputs (non-existing dates)
+  var septOct =  ( ((month===9)&&(day==31)) || ((month===11)&&(day==31)) );
+           //above boolean: check for Sept 31 and Nov 31 (non-existing dates)
+  
     if ( invalidAll==true ) {
      document.getElementById('result').textContent = "*Kindly Enter all Details Correctly!";
      document.getElementById("result").style.color = "red";
@@ -80,7 +86,12 @@ function akaned(){
      document.getElementById('result').textContent = "*please select a gender in order to get your Akan name";
      document.getElementById("result").style.color = "red";
      document.getElementById("resultintro").style.display = "none";
-    }
+     }
+   else if ( (febDates==true) || (aprJune==true) ||(septOct==true) ) {
+     document.getElementById('result').textContent = "*Please Select an existing Date.";
+     document.getElementById("result").style.color = "red";
+     document.getElementById("resultintro").style.display = "none";
+     }
    else if ( validFemale==true ) {
      document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +femaleAkanName[actualBirthDay];
      document.getElementById("result").style.color = "white";     
@@ -96,4 +107,3 @@ function akaned(){
     }
 
 }
-
