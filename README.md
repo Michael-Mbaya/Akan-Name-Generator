@@ -32,6 +32,17 @@ A web application that takes a user's birthday, calculates the day of the week t
 #### CSS 
 #### Javascript
 
+# BDD (Behaviour Driven Development)
+#### The app is expected to function as follows:
+* Be able to give the user a form for date of birth input.
+* Be able to give the user a form for month of birth input.
+* Be able to give the user a form for year of birth input.
+* Be able to allow the user input their gender ie.either male or female.Other genders do not apply.
+* Ensure that the date value entered is a valid date.
+* Find the day of the week from the date input and combine that with the gender to output an Akan name that corresponds to that day of the week.
+* A button that clears the output and allow for the repeat of the process.
+* Direct user to a table of Akan Names if they already know the day of the week they were born
+
 # Support and contact details
 In case of any questions, feel free to contact me at my email address:
 * gikundamike@gmail.com
