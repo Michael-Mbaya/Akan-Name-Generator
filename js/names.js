@@ -9,7 +9,7 @@ function akaned(){
 
   var day = parseInt(document.getElementById("day").value);
   var month = parseInt(document.getElementById("month").value);
-  var year = document.getElementById("year").value;
+  var year = parseInt(document.getElementById("year").value);
   var gender = document.getElementById("gender").value;
 
 
